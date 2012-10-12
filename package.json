@@ -1,0 +1,19 @@
+{
+  "name": "horseshoe",
+  "version": "0.0.0",
+  "description": "Better password checker",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/nathanbowser/horseshoe.git"
+  },
+  "author": "Nathan Bowser <nbowser@gmail.com>",
+  "license": "BSD",
+  "dependencies": {
+    "request": "~2.11.4",
+    "event-stream": "~3.0.7"
+  }
+}
