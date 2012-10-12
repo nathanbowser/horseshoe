@@ -1,13 +1,5 @@
-var request = require('request')
-  , es = require('event-stream')
+var score = require('./lib/score')
 
-var url = 'http://dazzlepod.com/site_media/txt/passwords.txt'
-var filter = es.map(function (data, cb) {
-  if (data !== process.argv[2]) { 
-	cb()
-  } else {
-    cb(null, data)
-  }
+score(process.argv[2], function (score) {
+  console.log(score)
 })
-
-request(url).pipe(es.split()).pipe(filter).pipe(process.stdout)
